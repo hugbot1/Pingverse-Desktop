@@ -1,0 +1,36 @@
+{
+  "name": "PingverseDesktop",
+  "version": "1.0.0",
+  "description": "Pingverse desktop app",
+  "license": "",
+  "author": "Handle",
+  "type": "commonjs",
+  "main": "dist/main/index.js",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "start": "tsc && electron .",
+    "dist": "tsc && electron-builder"
+  },
+  "build": {
+    "appId": "site.pingverse.desktop",
+    "productName": "Pingverse",
+    "directories": {
+      "buildResources": "build",
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "assets/**/*"
+    ],
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "electron": "^44.7.2",
+    "electron-builder": "^26.15.3",
+    "typescript": "^7.0.2"
+  }
+}

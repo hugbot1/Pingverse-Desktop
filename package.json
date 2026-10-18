@@ -13,7 +13,7 @@
     "dist": "tsc && electron-builder"
   },
   "build": {
-    "appId": "site.pingverse.desktop",
+    "appId": "ping.pingverse.desktop",
     "productName": "Pingverse",
     "directories": {
       "buildResources": "build",
